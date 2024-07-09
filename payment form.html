@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+</head>
+
+<body>
+    <!-- <textarea name="firstname" cols="20"></textarea>
+    <input type="text"><br>
+    <input type="password"><br>
+    <input type="checkbox" name="hello"> <br><input type="radio" name="happy">
+    <br><input type="file"> <br> <input type="submit">
+    <input type="reset"><br><input type="image">
+
+    <hr>
+    <hr> -->
+    <form action="">
+        <h1>Payment Form</h1>
+        <h4>required information are marked as *</h4>
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender: *</legend>
+            <p> <input type="radio" name="gender" id="male" required> Male
+                <input type="radio" name="gender" id="female" required> Female</p>
+        </fieldset>
+        <p>Address: * <textarea name="address" id="address" required cols="100" rows="10"></textarea></p>
+        <p>Email: * <input type="email" name="email" required></p>
+        <p>Pincode:* <input type="number" name="pincode" required></p>
+        <hr>
+        <h2>Card details</h2>
+        <hr>
+        <p>Card Type:*
+            <select name="card type" id="card type" required>
+                <option value="">Select card name</option>
+                <option value="sbi">SBI</option>
+                <option value="icci">VISA</option>
+                <option value="hdfc">HDFC</option>
+            </select></p>
+        <p>Card Number:*
+            <input type="number" name="cardnumber" required id="cardnumber"></p>
+        <p>Expiry Date: <input type="date" required name="exp_date" id="exp_date"></p>
+        <p>CVV : *
+            <input type="text" name="cvv" id="cvv"></p>
+        <input type="submit" value="pay now">
+    </form>
+</body>
+
+</html>
